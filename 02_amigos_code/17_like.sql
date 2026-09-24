@@ -102,6 +102,23 @@ SELECT *
 FROM person
 WHERE country_of_birth NOT ILIKE 'p%';
 
+
+-- DISTINCT ON
+-- DISTINCT ON returns only one row for each unique value
+-- of the specified column.
+
+-- Example:
+-- Get one person for each country that starts with "I".
+
+SELECT DISTINCT ON (country_of_birth) *
+FROM person
+WHERE country_of_birth ILIKE 'i%';
+
+-- DISTINCT ON works with the selected column.
+-- Here, only one row is returned for each
+-- unique country_of_birth.
+
+
 -- Wildcard summary
 
 -- %  = zero or more characters
