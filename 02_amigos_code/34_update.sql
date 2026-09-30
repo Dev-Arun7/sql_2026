@@ -19,7 +19,7 @@
 -- Change the email of the person with id = 1.
 
 UPDATE person
-SET email = '[simba@gmail.com](mailto:simba@gmail.com)'
+SET email = 'simba@gmail.com'
 WHERE id = 1;
 
 ## -- PostgreSQL output:
@@ -40,7 +40,7 @@ WHERE id = 1;
 
 -- id | first_name | last_name | email
 -- ---+------------+-----------+----------------
---  1 | Britney    | Bagguley  | [old@email.com](mailto:old@email.com)
+--  1 | Britney    | Bagguley  | old@email.com
 ----------------------------------------------------------------------
 
 --
@@ -49,7 +49,7 @@ WHERE id = 1;
 
 -- id | first_name | last_name | email
 -- ---+------------+-----------+-----------------
---  1 | Britney    | Bagguley  | [simba@gmail.com](mailto:simba@gmail.com)
+--  1 | Britney    | Bagguley  | simba@gmail.com
 
 ---
 
@@ -75,8 +75,7 @@ WHERE id = 1;
 
 -- id | first_name | last_name | email
 -- ---+------------+-----------+-----------------
---  1 | Simba      | Cat       | [simba@gmail.com](mailto:simba@gmail.com)
-
+--  1 | Simba      | Cat       | simba@gmail.com
 ---
 
 -- 3. UPDATE MULTIPLE ROWS
@@ -100,7 +99,7 @@ WHERE country_of_birth = 'India';
 ---
 
 UPDATE person
-SET email = '[example@gmail.com](mailto:example@gmail.com)'
+SET email = 'example@gmail.com'
 WHERE gender = 'Male'
 AND country_of_birth = 'India';
 
@@ -113,7 +112,7 @@ AND country_of_birth = 'India';
 ---
 
 UPDATE person
-SET email = '[example@gmail.com](mailto:example@gmail.com)'
+SET email = 'example@gmail.com'
 WHERE country_of_birth = 'India'
 OR country_of_birth = 'China';
 
@@ -152,7 +151,7 @@ WHERE id = 1;
 -- Then perform the UPDATE:
 
 UPDATE person
-SET email = '[new@email.com](mailto:new@email.com)'
+SET email = 'new@email.com'
 WHERE id = 1;
 
 -- Check the result again:
@@ -206,7 +205,7 @@ WHERE id = 1;
 ----------
 
 -- UPDATE person
--- SET email = '[example@gmail.com](mailto:example@gmail.com)'
+-- SET email = 'example@gmail.com'
 -- WHERE id = 1;
 
 -- ============================================================
@@ -244,7 +243,7 @@ WHERE id = 1;
 ## -- Update one column:
 
 -- UPDATE person
--- SET email = '[example@gmail.com](mailto:example@gmail.com)'
+-- SET email = 'example@gmail.com'
 -- WHERE id = 1;
 ----------------
 
